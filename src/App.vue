@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img src="./assets/pngkey.com-youtube-subscribe-button-png-4746448.png">
+  <h1>Welcome, Please Enter Your Information</h1>
+  <RegistrationInterface></RegistrationInterface>
+  <Vue></Vue>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import RegistrationInterface from './components/RegistrationInterface.vue';
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RegistrationInterface,
+    Vue,
   }
 }
 </script>
@@ -24,5 +29,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img {
+    align-content: center;
+    width: 200px;
 }
 </style>
